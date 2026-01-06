@@ -1,0 +1,60 @@
+const char HTML_PAGE[] PROGMEM = R"rawliteral(
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IXH – HVAC</title>
+
+<style>
+/* === TWÓJ ZAAKCEPTOWANY CSS 1:1 === */
+body { font-family: Arial; background:#f5f5f5; }
+.button { background:#ccc; }
+.button.active { background:#4CAF50; }
+</style>
+</head>
+
+<body>
+
+<img src="logo.png" style="max-width:180px;margin:10px auto;display:block;">
+
+<h2>Temperatury</h2>
+<div>CT: <span id="t_ct">--</span> °C</div>
+<div>Nawiew: <span id="t_naw">--</span> °C</div>
+<div>Wywiew: <span id="t_wyw">--</span> °C</div>
+<div>Zewnętrzna: <span id="t_out">--</span> °C</div>
+
+<h2>Tryb</h2>
+<button id="mode" class="button" onclick="toggleMode()">AUTO</button>
+
+<h2>Sterowanie</h2>
+<button id="hv" class="button" onclick="toggleHV()">HV</button>
+<button id="pc" class="button" onclick="togglePC()">Pompa PC</button>
+<button id="ct" class="button" onclick="toggleCT()">Pompa CT</button>
+
+<h2>PWM</h2>
+<div>
+Nawiew
+<input type="range" min="0" max="100" value="0" id="pwm_naw" oninput="setPWM('naw',this.value)">
+<span id="pwm_naw_v">0%</span>
+</div>
+
+<div>
+Wywiew
+<input type="range" min="0" max="100" value="0" id="pwm_wyw" oninput="setPWM('wyw',this.value)">
+<span id="pwm_wyw_v">0%</span>
+</div>
+
+<div>
+Zawór CT
+<input type="range" min="0" max="100" value="0" id="pwm_ct" oninput="setPWM('ct',this.value)">
+<span id="pwm_ct_v">0%</span>
+</div>
+
+<script>
+/* === TWÓJ ZAAKCEPTOWANY JS 1:1 === */
+</script>
+
+</body>
+</html>
+)rawliteral";
