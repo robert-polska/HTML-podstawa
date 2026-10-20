@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integracje IT · IXH — Integrated eXecution Hub</title>
+  <meta name="description" content="Otwarte protokoły i API, dzięki którym automatyka budynku rozmawia z systemami IT, przemysłowymi i z innymi platformami.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Integracje IT · IXH">
+  <meta property="og:site_name" content="IXH">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="subpage" style="--card-grad: linear-gradient(135deg, #ef4444, #f97316)">
+
+  <!-- NAV -->
+  <nav id="nav" class="visible">
+    <a href="../" class="nav-logo" aria-label="IXH — Integrated eXecution Hub">
+      <img src="../assets/ixh-logo.svg" alt="IXH" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../">Start</a></li>
+      <li><a href="../#systems" class="active">Systemy</a></li>
+      <li><a href="../#ixhgo">IXH-GO</a></li>
+      <li><a href="../#architecture">Technologia</a></li>
+      <li><a href="../#contact">Kontakt</a></li>
+    </ul>
+    <a href="../#contact" class="nav-btn">Kontakt</a>
+    <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="sp-hero">
+    <div class="sp-hero-glow"></div>
+    <div class="container">
+      <a href="../#systems" class="sp-back">← Wszystkie systemy</a>
+      <div class="sys-icon"><svg viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg></div>
+      <span class="mono-label">Zakres systemu</span>
+      <h1 class="section-h2">Integracje IT</h1>
+      <p class="section-sub sp-lead">Otwarte protokoły i API, dzięki którym automatyka budynku rozmawia z systemami IT, przemysłowymi i z innymi platformami.</p>
+    </div>
+  </section>
+
+  <!-- OPIS -->
+  <section class="sp-section">
+    <div class="container ixhgo-grid">
+      <div>
+        <p class="ixhgo-lead">Budynek nie działa w próżni. Dane z automatyki przydają się w systemach rozliczeń, zarządzania obiektem, raportowania energii czy w istniejących platformach smart home.</p>
+        <p class="ixhgo-lead">IXH-GO udostępnia dane i sterowanie przez otwarte interfejsy. Każda integracja jest opisana, więc może ją rozwijać także inna firma.</p>
+        <div class="ixhgo-stack"><span class="ixhgo-chip">REST API</span><span class="ixhgo-chip">MQTT</span><span class="ixhgo-chip">BACnet</span><span class="ixhgo-chip">Modbus</span><span class="ixhgo-chip">Home Assistant</span><span class="ixhgo-chip">ESPHome</span></div>
+      </div>
+      <div class="sp-how">
+        <div class="footer-h">Jak to robimy</div>
+        <ul>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Ustalenie, jakie dane i w jakim kierunku mają płynąć</span></li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Konta i uprawnienia dla każdej integracji osobno</span></li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Dokumentacja interfejsów przekazywana inwestorowi</span></li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Bez opłat licencyjnych za dostęp do własnych danych</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAKRES -->
+  <section class="sp-section sp-alt">
+    <div class="container">
+      <span class="mono-label">Co obejmuje</span>
+      <div class="why-grid sp-features">
+        <div class="why-card normal">
+          <div class="why-title">REST API</div>
+          <p class="why-text">Odczyt stanów, historii i sterowanie urządzeniami przez czytelne API HTTP/JSON.</p>
+        </div>
+        <div class="why-card normal">
+          <div class="why-title">MQTT</div>
+          <p class="why-text">Szyna komunikacyjna systemu — urządzenia i aplikacje zewnętrzne wymieniają dane w czasie rzeczywistym.</p>
+        </div>
+        <div class="why-card normal">
+          <div class="why-title">Modbus i BACnet</div>
+          <p class="why-text">Integracja z automatyką przemysłową i systemami BMS innych producentów.</p>
+        </div>
+        <div class="why-card normal">
+          <div class="why-title">Home Assistant i inne platformy</div>
+          <p class="why-text">Most do Home Assistant oraz integracje z ESPHome, Zigbee2MQTT i urządzeniami sieciowymi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sp-section sp-cta">
+    <div class="container text-center">
+      <h2 class="section-h2">Porozmawiajmy o Twoim budynku</h2>
+      <p class="section-sub">Opisz instalację, a podpowiemy, jak ją połączyć w jeden otwarty system.</p>
+      <div class="cta-actions">
+        <a href="mailto:info@ixhub.pl" class="btn-gradient">Napisz: info@ixhub.pl</a>
+        <a href="../#contact" class="btn-outline-white">Kontakt</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POZOSTAŁE SYSTEMY -->
+  <section class="sp-section">
+    <div class="container">
+      <span class="mono-label">Pozostałe systemy</span>
+      <div class="sp-others">
+        <a class="sp-other" href="hvac.html" style="--card-grad: linear-gradient(135deg, #06b6d4, #2563eb)"><span class="sys-icon sm"><svg viewBox="0 0 24 24"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg></span>HVAC</a>
+        <a class="sp-other" href="oswietlenie.html" style="--card-grad: linear-gradient(135deg, #3b82f6, #6366f1)"><span class="sys-icon sm"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>Oświetlenie</a>
+        <a class="sp-other" href="rolety.html" style="--card-grad: linear-gradient(135deg, #6366f1, #a855f7)"><span class="sys-icon sm"><svg viewBox="0 0 24 24"><path d="M3 3h18"/><path d="M20 7H8"/><path d="M20 11H8"/><path d="M10 19h10"/><path d="M8 15h12"/><path d="M4 3v14"/><circle cx="4" cy="19" r="2"/></svg></span>Rolety i osłony</a>
+        <a class="sp-other" href="systemy-techniczne.html" style="--card-grad: linear-gradient(135deg, #a855f7, #ec4899)"><span class="sys-icon sm"><svg viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg></span>Systemy techniczne budynku</a>
+        <a class="sp-other" href="monitoring.html" style="--card-grad: linear-gradient(135deg, #ec4899, #ef4444)"><span class="sys-icon sm"><svg viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></span>Monitoring i wizualizacja</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-wrap">
+          <img src="../assets/ixh-logo-full.svg" alt="IXH — Integrated eXecution Hub" class="footer-logo-img">
+        </div>
+        <p class="footer-about">
+          Otwarty system automatyki budynkowej nowej generacji.
+          Integrujemy świat fizyczny z cyfrowym — bez vendor lock-in,
+          z pełną kontrolą nad danymi i infrastrukturą.
+        </p>
+      </div>
+      <div>
+        <div class="footer-h">Nawigacja</div>
+        <ul class="footer-links">
+          <li><a href="../#systems">Usługi</a></li>
+          <li><a href="../#ixhgo">IXH-GO</a></li>
+          <li><a href="../#architecture">Technologia</a></li>
+          <li><a href="../#why">Dlaczego IXH</a></li>
+          <li><a href="../#contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-h">Kontakt</div>
+        <a class="footer-contact-item" href="mailto:info@ixhub.pl">
+          <svg viewBox="0 0 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+          info@ixhub.pl
+        </a>
+        <a class="footer-contact-item" href="tel:+48784811907">
+          <svg viewBox="0 0 24 24"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z"/></svg>
+          +48 784 811 907
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 IXH — Integrated eXecution Hub · ixhub.pl</span>
+      <span class="footer-copy" style="color:rgba(255,255,255,.1)">Automatyka · Integracja · AI</span>
+    </div>
+  </footer>
+
+</body>
+</html>
