@@ -783,3 +783,23 @@ footer::before {
 .sp-other:hover { border-color: var(--w20); transform: translateY(-2px); }
 .sys-icon.sm { width: 40px; height: 40px; border-radius: 10px; margin-bottom: 0; flex-shrink: 0; }
 .sys-icon.sm svg { width: 20px; height: 20px; }
+
+/* ── W PRAKTYCE ── */
+#praktyka { background: linear-gradient(to bottom, var(--bg1), var(--black)); }
+.section-h3 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: #fff; margin-top: 8px; }
+.shots { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
+.shot { grid-column: span 2; margin: 0; border: 1px solid var(--w10); border-radius: 16px; overflow: hidden; background: rgba(24,24,27,.6); transition: border-color .3s, transform .3s; }
+.shot.wide { grid-column: span 3; }
+.shot:hover { border-color: var(--w20); transform: translateY(-3px); }
+.shot img { display: block; width: 100%; height: auto; }
+.shot figcaption { padding: 12px 16px; font-size: .85rem; color: var(--w50); line-height: 1.5; }
+@media (max-width: 899px) { .shots { grid-template-columns: 1fr; } .shot, .shot.wide { grid-column: auto; } }
+.ext-grid { max-width: 820px; margin: 0 auto; }
+.soon-badge {
+  display: inline-block; margin-left: 10px; vertical-align: middle; padding: 2px 8px; border-radius: 999px;
+  font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .08em; text-transform: uppercase;
+  color: #fbbf24; border: 1px solid rgba(251,191,36,.35); background: rgba(251,191,36,.08);
+}
+.hw-grid { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 1100px) { .hw-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 640px) { .hw-grid { grid-template-columns: 1fr; } }

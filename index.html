@@ -417,9 +417,9 @@
   <section id="demo">
     <div class="container">
       <div class="text-center reveal" style="margin-bottom:40px">
-        <span class="mono-label" style="color:#a855f7">System Live Demo</span>
-        <h2 class="section-h2">Central Command Center</h2>
-        <p class="section-sub">Przejmij kontrolę nad każdym aspektem infrastruktury w jednym, spójnym ekosystemie.</p>
+        <span class="mono-label" style="color:#a855f7">Pokaz poglądowy</span>
+        <h2 class="section-h2">Centrum sterowania</h2>
+        <p class="section-sub">Wszystkie strefy i instalacje obiektu na jednym ekranie — stan, zużycie i alarmy w czasie rzeczywistym.</p>
       </div>
       <div class="demo-window reveal">
         <div class="demo-titlebar">
@@ -431,42 +431,42 @@
           <div class="demo-tabs">
             <button class="demo-tab active">
               <svg viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
-              Digital Twin
+              Plan obiektu
             </button>
             <button class="demo-tab">
               <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              Service CRM
+              Serwis
             </button>
             <button class="demo-tab">
               <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg>
-              AI Cortex
+              Prognozy
             </button>
           </div>
           <div class="demo-status">
             <div class="demo-status-dot"></div>
-            SYSTEM ONLINE
+            SYSTEM DZIAŁA
           </div>
         </div>
         <div class="demo-body">
           <div class="demo-sidebar">
             <div class="demo-stats">
-              <div class="demo-stat-box"><div class="demo-stat-label">Total Load</div><div class="demo-stat-val yellow">6550 kW</div></div>
-              <div class="demo-stat-box"><div class="demo-stat-label">Avg Temp</div><div class="demo-stat-val cyan">14.0°C</div></div>
-              <div class="demo-stat-box"><div class="demo-stat-label">Efficiency</div><div class="demo-stat-val green">89%</div></div>
+              <div class="demo-stat-box"><div class="demo-stat-label">Moc chwilowa</div><div class="demo-stat-val yellow">48,6 kW</div></div>
+              <div class="demo-stat-box"><div class="demo-stat-label">Śr. temperatura</div><div class="demo-stat-val cyan">21,4°C</div></div>
+              <div class="demo-stat-box"><div class="demo-stat-label">Sprawność</div><div class="demo-stat-val green">89%</div></div>
             </div>
             <div class="demo-zones">
-              <div class="demo-zones-label">All Zones</div>
-              <div class="demo-zone-row"><div class="zone-dot green"></div><span class="zone-name">HVAC A</span><span class="zone-val">1250 kW</span></div>
-              <div class="demo-zone-row"><div class="zone-dot orange"></div><span class="zone-name">Server Room</span><span class="zone-val">1860 kW</span></div>
-              <div class="demo-zone-row"><div class="zone-dot green"></div><span class="zone-name">Assembly Line</span><span class="zone-val">890 kW</span></div>
-              <div class="demo-zone-row"><div class="zone-dot red"></div><span class="zone-name">Cold Storage</span><span class="zone-val">2100 kW</span></div>
-              <div class="demo-zone-row"><div class="zone-dot green"></div><span class="zone-name">Office Complex</span><span class="zone-val">450 kW</span></div>
+              <div class="demo-zones-label">Wszystkie strefy</div>
+              <div class="demo-zone-row"><div class="zone-dot green"></div><span class="zone-name">Hala A</span><span class="zone-val">12,5 kW</span></div>
+              <div class="demo-zone-row"><div class="zone-dot orange"></div><span class="zone-name">Serwerownia</span><span class="zone-val">18,6 kW</span></div>
+              <div class="demo-zone-row"><div class="zone-dot green"></div><span class="zone-name">Linia produkcyjna</span><span class="zone-val">8,9 kW</span></div>
+              <div class="demo-zone-row"><div class="zone-dot red"></div><span class="zone-name">Chłodnia</span><span class="zone-val">4,1 kW</span></div>
+              <div class="demo-zone-row"><div class="zone-dot green"></div><span class="zone-name">Biura</span><span class="zone-val">4,5 kW</span></div>
             </div>
           </div>
           <div class="demo-main">
             <div class="demo-main-toolbar">
-              <span>Drag to pan &nbsp;|&nbsp; Zoom: 100%</span>
-              <span style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:rgba(255,255,255,.3)">IXH KERNEL v4.0.2</span>
+              <span>Przeciągnij, aby przesunąć &nbsp;|&nbsp; Powiększenie: 100%</span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:rgba(255,255,255,.3)">IXH-GO · bramka lokalna</span>
             </div>
             <div class="demo-map">
               <div class="demo-map-grid"></div>
@@ -474,49 +474,127 @@
               <div class="demo-map-zone" style="left:5%;top:5%;width:35%;height:40%">Hala A</div>
               <div class="demo-map-zone" style="left:42%;top:5%;width:25%;height:55%">Serwerownia</div>
               <div class="demo-map-zone" style="left:69%;top:5%;width:28%;height:40%">Biura</div>
-              <div class="demo-map-zone" style="left:5%;top:52%;width:35%;height:40%">Linia prod.</div>
-              <div class="demo-map-zone" style="left:42%;top:65%;width:55%;height:28%">Cold Storage</div>
+              <div class="demo-map-zone" style="left:5%;top:52%;width:35%;height:40%">Linia produkcyjna</div>
+              <div class="demo-map-zone" style="left:42%;top:65%;width:55%;height:28%">Chłodnia</div>
               <!-- nodes -->
               <div class="map-node node-green" style="left:15%;top:20%">
                 <div class="map-node-ping"></div>
                 <div class="map-node-dot"></div>
-                <div class="map-node-label">HVAC A</div>
+                <div class="map-node-label">Hala A</div>
               </div>
               <div class="map-node node-orange" style="left:55%;top:30%">
                 <div class="map-node-ping"></div>
                 <div class="map-node-dot"></div>
-                <div class="map-node-label">Server Room ⚠</div>
+                <div class="map-node-label">Serwerownia ⚠</div>
               </div>
               <div class="map-node node-green" style="left:30%;top:65%">
                 <div class="map-node-ping"></div>
                 <div class="map-node-dot"></div>
-                <div class="map-node-label">Assembly Line</div>
+                <div class="map-node-label">Linia produkcyjna</div>
               </div>
               <div class="map-node node-red" style="left:72%;top:75%">
                 <div class="map-node-ping"></div>
                 <div class="map-node-dot"></div>
-                <div class="map-node-label">Cold Storage ⚠</div>
+                <div class="map-node-label">Chłodnia ⚠</div>
               </div>
               <div class="map-node node-green" style="left:82%;top:20%">
                 <div class="map-node-ping"></div>
                 <div class="map-node-dot"></div>
-                <div class="map-node-label">Office Complex</div>
+                <div class="map-node-label">Biura</div>
               </div>
               <svg class="demo-map-connections" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
                 <line x1="15%" y1="20%" x2="55%" y2="30%" stroke="#a855f7" stroke-width="1" stroke-opacity=".3" stroke-dasharray="8 4"/>
                 <line x1="55%" y1="30%" x2="72%" y2="75%" stroke="#a855f7" stroke-width="1" stroke-opacity=".3" stroke-dasharray="8 4"/>
               </svg>
               <div class="demo-legend">
-                <div class="legend-item"><div class="zone-dot green" style="width:8px;height:8px;flex-shrink:0"></div>Nominal</div>
-                <div class="legend-item"><div class="zone-dot orange" style="width:8px;height:8px;flex-shrink:0"></div>Warning</div>
-                <div class="legend-item"><div class="zone-dot red" style="width:8px;height:8px;flex-shrink:0"></div>Critical</div>
+                <div class="legend-item"><div class="zone-dot green" style="width:8px;height:8px;flex-shrink:0"></div>Prawidłowo</div>
+                <div class="legend-item"><div class="zone-dot orange" style="width:8px;height:8px;flex-shrink:0"></div>Ostrzeżenie</div>
+                <div class="legend-item"><div class="zone-dot red" style="width:8px;height:8px;flex-shrink:0"></div>Alarm</div>
               </div>
             </div>
           </div>
         </div>
         <div class="demo-footer">
-          <div style="display:flex;gap:20px"><span>CPU: 12%</span><span>MEM: 4.2GB</span><span>NET: 1.2Gbps</span></div>
-          <div>IXH KERNEL v4.0.2 [STABLE]</div>
+          <div style="display:flex;gap:20px"><span>Procesor: 12%</span><span>Pamięć: 1,2 GB</span><span>Sieć: połączona</span></div>
+          <div>IXH-GO · wersja stabilna</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- W PRAKTYCE -->
+  <section id="praktyka">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom:48px">
+        <span class="mono-label">Działające wdrożenia</span>
+        <h2 class="section-h2">IXH-GO w praktyce</h2>
+        <p class="section-sub">Prawdziwe ekrany z pracujących instalacji: panel WWW, prognozy pogody i panele ścienne w pomieszczeniach.</p>
+      </div>
+      <div class="shots">
+          <figure class="shot wide reveal">
+            <a href="assets/galeria/panel-klimatyzacja.webp" target="_blank" rel="noopener"><img src="assets/galeria/panel-klimatyzacja.webp" alt="Panel WWW — klimatyzacja VRF: trzy układy, nastawy, tryby, blokada trybu i automat wentylacji" width="1015" height="783" loading="lazy"></a>
+            <figcaption>Panel WWW — klimatyzacja VRF: trzy układy, nastawy, tryby, blokada trybu i automat wentylacji</figcaption>
+          </figure>
+          <figure class="shot wide reveal">
+            <a href="assets/galeria/panel-prognozy.webp" target="_blank" rel="noopener"><img src="assets/galeria/panel-prognozy.webp" alt="Panel WWW — prognozy z kilku modeli pogodowych porównane z pomiarem lokalnym" width="1320" height="645" loading="lazy"></a>
+            <figcaption>Panel WWW — prognozy z kilku modeli pogodowych porównane z pomiarem lokalnym</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <a href="assets/galeria/panel-dotykowy.webp" target="_blank" rel="noopener"><img src="assets/galeria/panel-dotykowy.webp" alt="Panel dotykowy: zegar, pogoda, prognoza, temperatury i czujniki ruchu" width="800" height="480" loading="lazy"></a>
+            <figcaption>Panel dotykowy: zegar, pogoda, prognoza, temperatury i czujniki ruchu</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <a href="assets/galeria/panel-scienny-esp.webp" target="_blank" rel="noopener"><img src="assets/galeria/panel-scienny-esp.webp" alt="Panel ścienny ESP: pogoda, temperatury w pokojach i wykryty ruch" width="800" height="480" loading="lazy"></a>
+            <figcaption>Panel ścienny ESP: pogoda, temperatury w pokojach i wykryty ruch</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <a href="assets/galeria/panel-esp-prognoza.webp" target="_blank" rel="noopener"><img src="assets/galeria/panel-esp-prognoza.webp" alt="Panel ścienny: prognoza na najbliższe godziny z pomiarem z balkonu" width="800" height="480" loading="lazy"></a>
+            <figcaption>Panel ścienny: prognoza na najbliższe godziny z pomiarem z balkonu</figcaption>
+          </figure>
+      </div>
+
+      <div class="text-center reveal" style="margin:80px 0 32px">
+        <span class="mono-label">Sprzęt w obiekcie</span>
+        <h3 class="section-h3">Z czego składa się instalacja</h3>
+      </div>
+      <div class="why-grid hw-grid">
+        <div class="why-card normal reveal">
+          <div class="why-icon plain"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01"/><path d="M6 14h12"/></svg></div>
+          <div class="why-title">Bramka IXH-GO</div>
+          <p class="why-text">Mały komputer w szafie technicznej obiektu. Na nim działa cały system: adaptery urządzeń, automatyki, historia danych i panel WWW.</p>
+        </div>
+        <div class="why-card normal reveal">
+          <div class="why-icon plain"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><rect x="7" y="4" width="10" height="16" rx="2"/><path d="M10 9v6M14 9v6"/></svg></div>
+          <div class="why-title">Konwertery RS485 ↔ Ethernet</div>
+          <p class="why-text">Łączą magistrale Modbus RTU klimatyzacji, central i falowników z siecią budynku — bez wymiany sterowników urządzeń.</p>
+        </div>
+        <div class="why-card normal reveal">
+          <div class="why-icon plain"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><path d="M12 20h.01"/></svg></div>
+          <div class="why-title">Bramki i czujniki bezprzewodowe</div>
+          <p class="why-text">Koordynator Zigbee i czujniki temperatury, wilgotności i ruchu — montaż bez kucia ścian, także w istniejących budynkach.</p>
+        </div>
+        <div class="why-card normal reveal">
+          <div class="why-icon plain"><svg viewBox="0 0 24 24"><rect width="18" height="12" x="3" y="4" rx="2"/><path d="M7 20h10"/><path d="M12 16v4"/></svg></div>
+          <div class="why-title">Panele ścienne</div>
+          <p class="why-text">Dotykowe panele w pomieszczeniach: zegar, pogoda, prognoza, temperatury i sterowanie — z tych samych danych co panel WWW.</p>
+        </div>
+      </div>
+
+      <div class="text-center reveal" style="margin:80px 0 32px">
+        <span class="mono-label">Możliwości rozbudowy</span>
+        <h3 class="section-h3">Co jeszcze można podłączyć</h3>
+        <p class="section-sub">Platforma jest otwarta, więc kolejne instalacje dokładamy jako nowe adaptery — bez zmiany całego systemu.</p>
+      </div>
+      <div class="why-grid ext-grid">
+        <div class="why-card normal reveal">
+          <div class="why-icon plain"><svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+          <div class="why-title">Nawadnianie ogrodu i zieleni<span class="soon-badge">na zamówienie</span></div>
+          <p class="why-text">Sekcje podlewania według harmonogramu, czujników wilgotności gleby i prognozy opadów — bez podlewania przed deszczem.</p>
+        </div>
+        <div class="why-card normal reveal">
+          <div class="why-icon plain"><svg viewBox="0 0 24 24"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div>
+          <div class="why-title">Nadzór kamerami IP<span class="soon-badge">na zamówienie</span></div>
+          <p class="why-text">Podgląd kamer w panelu IXH-GO, zdjęcie przy alarmie lub wykryciu ruchu i powiadomienie push na telefon.</p>
         </div>
       </div>
     </div>
